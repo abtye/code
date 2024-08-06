@@ -43,7 +43,7 @@
       <div class="push-right input-group">
         <Button @click="modal.hide()">
           <CrossIcon />
-          Cancel
+          取消
         </Button>
         <Button color="primary" @click="createProject">
           <CheckIcon />

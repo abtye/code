@@ -109,7 +109,7 @@ const exportPack = async () => {
   <Modal ref="exportModal" header="Export modpack" :noblur="!themeStore.advancedRendering">
     <div class="modal-body">
       <div class="labeled_input">
-        <p>Modpack Name</p>
+        <p>整合包名称</p>
         <div class="iconified-input">
           <PackageIcon />
           <input v-model="nameInput" type="text" placeholder="Modpack name" class="input" />
@@ -200,7 +200,7 @@ const exportPack = async () => {
       <div class="button-row push-right">
         <Button @click="exportModal.hide">
           <XIcon />
-          Cancel
+          取消
         </Button>
         <Button color="primary" @click="exportPack">
           <PackageIcon />

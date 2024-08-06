@@ -40,10 +40,10 @@ onUnmounted(() => {
     <div class="icon">
       <NewInstanceImage />
     </div>
-    <h3>No instances found</h3>
+    <h3>找不到实例</h3>
     <Button color="primary" :disabled="offline" @click="$refs.installationModal.show()">
       <PlusIcon />
-      Create new instance
+      创建新实例
     </Button>
     <InstanceCreationModal ref="installationModal" />
   </div>

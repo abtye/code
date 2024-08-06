@@ -43,7 +43,7 @@
       <div class="input-group push-right">
         <Button @click="cancel">
           <XIcon />
-          Cancel
+          取消
         </Button>
         <Button color="primary" @click="submitReport">
           <CheckIcon />

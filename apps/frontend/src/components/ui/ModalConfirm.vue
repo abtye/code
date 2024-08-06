@@ -22,7 +22,7 @@
       <div class="button-group">
         <button class="iconified-button" @click="cancel">
           <CrossIcon />
-          Cancel
+          取消
         </button>
         <button class="iconified-button danger-button" :disabled="action_disabled" @click="proceed">
           <TrashIcon />

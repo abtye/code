@@ -61,7 +61,7 @@
       <div class="push-right input-group">
         <button class="iconified-button" @click="cancel">
           <CrossIcon />
-          Cancel
+          取消
         </button>
         <button class="iconified-button brand-button" @click="createProject">
           <CheckIcon />

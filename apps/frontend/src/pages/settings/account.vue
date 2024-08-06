@@ -24,7 +24,7 @@
         <div class="input-group push-right">
           <button class="iconified-button" @click="$refs.changeEmailModal.hide()">
             <XIcon />
-            Cancel
+            取消
           </button>
           <button
             type="button"
@@ -93,7 +93,7 @@
         <div class="input-group push-right">
           <button class="iconified-button" @click="$refs.managePasswordModal.hide()">
             <XIcon />
-            Cancel
+            取消
           </button>
           <template v-if="removePasswordMode">
             <button
@@ -157,7 +157,7 @@
           <div class="input-group push-right">
             <button class="iconified-button" @click="$refs.manageTwoFactorModal.hide()">
               <XIcon />
-              Cancel
+              取消
             </button>
             <button class="iconified-button danger-button" @click="removeTwoFactor">
               <TrashIcon />
@@ -230,7 +230,7 @@
               @click="$refs.manageTwoFactorModal.hide()"
             >
               <XIcon />
-              Cancel
+              取消
             </button>
             <button
               v-if="twoFactorStep <= 1"

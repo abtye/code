@@ -111,13 +111,13 @@ onUnmounted(() => {
           downloaded: true,
         },
         {
-          label: 'Popular packs',
+          label: '流行整合包',
           route: '/browse/modpack',
           instances: featuredModpacks,
           downloaded: false,
         },
         {
-          label: 'Popular mods',
+          label: '流行模组',
           route: '/browse/mod',
           instances: featuredMods,
           downloaded: false,

@@ -287,7 +287,7 @@
         </p>
       </div>
       <div class="button-group push-right">
-        <Button @click="deleteWarning.hide()"> Cancel </Button>
+        <Button @click="deleteWarning.hide()"> 取消 </Button>
         <Button color="danger" @click="deleteSelected">
           <TrashIcon />
           Remove
@@ -310,7 +310,7 @@
         </p>
       </div>
       <div class="button-group push-right">
-        <Button @click="deleteDisabledWarning.hide()"> Cancel </Button>
+        <Button @click="deleteDisabledWarning.hide()"> 取消 </Button>
         <Button color="danger" @click="deleteDisabled">
           <TrashIcon />
           Remove

@@ -256,7 +256,7 @@ command_listener(async (e) => {
         <div class="button-row push-right">
           <Button @click="showLauncherLogsFolder"><FileIcon />Open launcher logs</Button>
 
-          <a class="btn" href="https://support.modrinth.com"> <ChatIcon /> Get support </a>
+          <a class="btn" href="https://support.modrinth.com"> <ChatIcon /> 获取支持 </a>
         </div>
       </Card>
     </div>
@@ -274,7 +274,7 @@ command_listener(async (e) => {
             <HomeIcon />
           </RouterLink>
           <RouterLink
-            v-tooltip="'Browse'"
+            v-tooltip="'浏览'"
             to="/browse/modpack"
             class="btn icon-only collapsed-button"
             :class="{
@@ -283,7 +283,7 @@ command_listener(async (e) => {
           >
             <SearchIcon />
           </RouterLink>
-          <RouterLink v-tooltip="'Library'" to="/library" class="btn icon-only collapsed-button">
+          <RouterLink v-tooltip="'库'" to="/library" class="btn icon-only collapsed-button">
             <LibraryIcon />
           </RouterLink>
           <Suspense>
@@ -293,7 +293,7 @@ command_listener(async (e) => {
       </div>
       <div class="settings pages-list">
         <Button
-          v-tooltip="'Create profile'"
+          v-tooltip="'创建配置'"
           class="sleek-primary collapsed-button"
           icon-only
           :disabled="offline"
@@ -301,7 +301,7 @@ command_listener(async (e) => {
         >
           <PlusIcon />
         </Button>
-        <RouterLink v-tooltip="'Settings'" to="/settings" class="btn icon-only collapsed-button">
+        <RouterLink v-tooltip="'设置'" to="/settings" class="btn icon-only collapsed-button">
           <SettingsIcon />
         </RouterLink>
       </div>

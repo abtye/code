@@ -6,133 +6,133 @@
     "message": "Decline"
   },
   "auth.authorize.app-info": {
-    "message": "<strong>{appName}</strong> by <creator-link>{creator}</creator-link> will be able to:"
+    "message": "<strong>{appName}</strong> by <creator-link>{creator}</creator-link> 将能够:"
   },
   "auth.authorize.authorize-app-name": {
     "message": "Authorize {appName}"
   },
   "auth.authorize.error.no-redirect-url": {
-    "message": "No redirect location found in response"
+    "message": "在响应中找不到重定向位置"
   },
   "auth.authorize.redirect-url": {
-    "message": "You will be redirected to <redirect-url>{url}</redirect-url>"
+    "message": "您将被重定向到<redirect-url>{url}</redirect-url>"
   },
   "auth.reset-password.method-choice.action": {
-    "message": "Send recovery email"
+    "message": "发送恢复邮件"
   },
   "auth.reset-password.method-choice.description": {
-    "message": "Enter your email below and we'll send a recovery link to allow you to recover your account."
+    "message": "在下面输入您的电子邮件，我们将发送一个恢复链接，以便您恢复帐户。"
   },
   "auth.reset-password.method-choice.email-username.label": {
-    "message": "Email or username"
+    "message": "电子邮件或用户名"
   },
   "auth.reset-password.method-choice.email-username.placeholder": {
-    "message": "Email"
+    "message": "电子邮件"
   },
   "auth.reset-password.notification.email-sent.text": {
-    "message": "An email with instructions has been sent to you if the email was previously saved on your account."
+    "message": "如果电子邮件之前已保存在您的帐户上，则已向您发送了一封包含说明的电子邮件。"
   },
   "auth.reset-password.notification.email-sent.title": {
-    "message": "Email sent"
+    "message": "发送邮件"
   },
   "auth.reset-password.notification.password-reset.text": {
-    "message": "You can now log-in into your account with your new password."
+    "message": "现在，您可以使用新密码登录您的帐户。"
   },
   "auth.reset-password.notification.password-reset.title": {
-    "message": "Password successfully reset"
+    "message": "密码重置成功"
   },
   "auth.reset-password.post-challenge.action": {
-    "message": "Reset password"
+    "message": "重置密码"
   },
   "auth.reset-password.post-challenge.confirm-password.label": {
-    "message": "Confirm password"
+    "message": "提交密码"
   },
   "auth.reset-password.post-challenge.description": {
-    "message": "Enter your new password below to gain access to your account."
+    "message": "在下面输入您的新密码以访问您的帐户。"
   },
   "auth.reset-password.title": {
-    "message": "Reset Password"
+    "message": "重置密码"
   },
   "auth.reset-password.title.long": {
-    "message": "Reset your password"
+    "message": "重置你的密码"
   },
   "auth.sign-in.2fa.description": {
-    "message": "Please enter a two-factor code to proceed."
+    "message": "请输入双重验证代码以继续。"
   },
   "auth.sign-in.2fa.label": {
-    "message": "Enter two-factor code"
+    "message": "输入双重验证代码"
   },
   "auth.sign-in.2fa.placeholder": {
-    "message": "Enter code..."
+    "message": "输入验证码..."
   },
   "auth.sign-in.additional-options": {
-    "message": "<forgot-password-link>Forgot password?</forgot-password-link> • <create-account-link>Create an account</create-account-link>"
+    "message": "<forgot-password-link>忘记密码？</forgot-password-link> • <create-account-link>创建一个账户</create-account-link>"
   },
   "auth.sign-in.email-username.label": {
-    "message": "Email or username"
+    "message": "电子邮件或用户名"
   },
   "auth.sign-in.password.label": {
-    "message": "Password"
+    "message": "密码"
   },
   "auth.sign-in.sign-in-with": {
-    "message": "Sign in with"
+    "message": "登录"
   },
   "auth.sign-in.title": {
-    "message": "Sign In"
+    "message": "登录"
   },
   "auth.sign-in.use-password": {
-    "message": "Or use a password"
+    "message": "或者用密码"
   },
   "auth.sign-up.action.create-account": {
-    "message": "Create account"
+    "message": "创建账户"
   },
   "auth.sign-up.confirm-password.label": {
-    "message": "Confirm password"
+    "message": "提交密码"
   },
   "auth.sign-up.email.label": {
-    "message": "Email"
+    "message": "电子邮件"
   },
   "auth.sign-up.label.username": {
-    "message": "Username"
+    "message": "用户名"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "By creating an account, you agree to Modrinth's <terms-link>Terms</terms-link> and <privacy-policy-link>Privacy Policy</privacy-policy-link>."
+    "message": "创建帐户即表示您同意Modrinth的<terms-link>条款</terms-link> 和 <privacy-policy-link>隐私政策</privacy-policy-link>."
   },
   "auth.sign-up.notification.password-mismatch.text": {
-    "message": "Passwords do not match!"
+    "message": "密码不匹配"
   },
   "auth.sign-up.password.label": {
-    "message": "Password"
+    "message": "密码"
   },
   "auth.sign-up.sign-in-option.title": {
-    "message": "Already have an account?"
+    "message": "已经有一个账号？"
   },
   "auth.sign-up.subscribe.label": {
-    "message": "Subscribe to updates about Modrinth"
+    "message": "订阅Modrinth的更新"
   },
   "auth.sign-up.title": {
-    "message": "Sign Up"
+    "message": "注册"
   },
   "auth.sign-up.title.create-account": {
-    "message": "Or create an account yourself"
+    "message": "或者自己创建一个帐户"
   },
   "auth.sign-up.title.sign-up-with": {
-    "message": "Sign up with"
+    "message": "注册"
   },
   "auth.verify-email.action.account-settings": {
-    "message": "Account settings"
+    "message": "账号设置"
   },
   "auth.verify-email.action.sign-in": {
-    "message": "Sign in"
+    "message": "登录"
   },
   "auth.verify-email.already-verified.description": {
-    "message": "Your email is already verified!"
+    "message": "你的邮件已验证！"
   },
   "auth.verify-email.already-verified.title": {
-    "message": "Email already verified"
+    "message": "邮件已验证"
   },
   "auth.verify-email.failed-verification.action": {
-    "message": "Resend verification email"
+    "message": "重新发送验证邮件"
   },
   "auth.verify-email.failed-verification.description": {
     "message": "We were unable to verify your email. Try re-sending the verification email through your dashboard by signing in."
@@ -168,7 +168,7 @@
     "message": "Welcome"
   },
   "button.cancel": {
-    "message": "Cancel"
+    "message": "取消"
   },
   "button.continue": {
     "message": "Continue"

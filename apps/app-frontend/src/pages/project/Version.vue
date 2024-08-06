@@ -114,11 +114,11 @@
             /></span>
           </div>
           <div class="metadata-item">
-            <span class="metadata-label">Version Number</span>
+            <span class="metadata-label">版本号</span>
             <span class="metadata-value">{{ version.version_number }}</span>
           </div>
           <div class="metadata-item">
-            <span class="metadata-label">Loaders</span>
+            <span class="metadata-label">加载器</span>
             <span class="metadata-value">{{
               version.loaders
                 .map((loader) => loader.charAt(0).toUpperCase() + loader.slice(1))
@@ -126,7 +126,7 @@
             }}</span>
           </div>
           <div class="metadata-item">
-            <span class="metadata-label">Game Versions</span>
+            <span class="metadata-label">游戏版本</span>
             <span class="metadata-value"> {{ version.game_versions.join(', ') }} </span>
           </div>
           <div class="metadata-item">

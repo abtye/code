@@ -10,11 +10,11 @@
         <div class="image-input">
           <Button @click="upload_icon()">
             <UploadIcon />
-            Select icon
+            选择图标
           </Button>
           <Button :disabled="!display_icon" @click="reset_icon">
             <XIcon />
-            Remove icon
+            移除图标
           </Button>
         </div>
       </div>
@@ -33,7 +33,7 @@
         <Chips v-model="loader" :items="loaders" />
       </div>
       <div class="input-row">
-        <p class="input-label">Game version</p>
+        <p class="input-label">游戏版本</p>
         <div class="versions">
           <multiselect
             v-model="game_version"
@@ -41,7 +41,7 @@
             :options="game_versions"
             :multiple="false"
             :searchable="true"
-            placeholder="Select game version"
+            placeholder="选择游戏版本"
             open-direction="top"
             :show-labels="false"
           />
@@ -49,7 +49,7 @@
             v-if="showAdvanced"
             v-model="showSnapshots"
             class="filter-checkbox"
-            label="Include snapshots"
+            label="包含快照"
           />
         </div>
       </div>
@@ -77,11 +77,11 @@
       <div class="input-group push-right">
         <Button @click="toggle_advanced">
           <CodeIcon />
-          {{ showAdvanced ? 'Hide advanced' : 'Show advanced' }}
+          {{ showAdvanced ? 'Hide advanced' : '显示高级' }}
         </Button>
         <Button @click="hide()">
           <XIcon />
-          Cancel
+          取消
         </Button>
         <Button color="primary" :disabled="!check_valid || creating" @click="create_instance()">
           <PlusIcon v-if="!creating" />

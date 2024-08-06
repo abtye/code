@@ -79,7 +79,7 @@
         <div class="push-right input-group">
           <Button @click="$refs.modalOpen?.hide()">
             <XIcon />
-            Cancel
+            取消
           </Button>
           <Button :disabled="!selectedProjects?.length" color="primary" @click="onSubmitHandler()">
             <TransferIcon />

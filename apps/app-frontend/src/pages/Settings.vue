@@ -131,17 +131,17 @@ async function findLauncherDir() {
     <Card>
       <div class="label">
         <h3>
-          <span class="label__title size-card-header">General settings</span>
+          <span class="label__title size-card-header">常规设置</span>
         </h3>
       </div>
       <ModrinthLoginScreen ref="loginScreenModal" :callback="signInAfter" />
       <div class="adjacent-input">
         <label for="theme">
-          <span class="label__title">Manage account</span>
+          <span class="label__title">管理账号</span>
           <span v-if="credentials" class="label__description">
-            You are currently logged in as {{ credentials.user.username }}.
+            您当前以以下身份登录 {{ credentials.user.username }}.
           </span>
-          <span v-else> Sign in to your Modrinth account. </span>
+          <span v-else> 登录您的Modrinth帐户。 </span>
         </label>
         <button v-if="credentials" class="btn" @click="logOut">
           <LogOutIcon />
@@ -153,9 +153,9 @@ async function findLauncherDir() {
         </button>
       </div>
       <label for="theme">
-        <span class="label__title">App directory</span>
+        <span class="label__title">App 目录</span>
         <span class="label__description">
-          The directory where the launcher stores all of its files.
+          启动器存储其所有文件的目录。
         </span>
       </label>
       <div class="app-directory">
@@ -171,13 +171,13 @@ async function findLauncherDir() {
     <Card>
       <div class="label">
         <h3>
-          <span class="label__title size-card-header">Display</span>
+          <span class="label__title size-card-header">显示</span>
         </h3>
       </div>
       <div class="adjacent-input">
         <label for="theme">
-          <span class="label__title">Color theme</span>
-          <span class="label__description">Change the global launcher color theme.</span>
+          <span class="label__title">颜色主题</span>
+          <span class="label__description">更改全局启动器颜色主题。</span>
         </label>
         <DropdownSelect
           id="theme"
@@ -196,10 +196,9 @@ async function findLauncherDir() {
       </div>
       <div class="adjacent-input">
         <label for="advanced-rendering">
-          <span class="label__title">Advanced rendering</span>
+          <span class="label__title">高级渲染</span>
           <span class="label__description">
-            Enables advanced rendering such as blur effects that may cause performance issues
-            without hardware-accelerated rendering.
+            启用高级渲染，例如在没有硬件加速渲染的情况下可能会导致性能问题的模糊效果。
           </span>
         </label>
         <Toggle
@@ -216,9 +215,9 @@ async function findLauncherDir() {
       </div>
       <div class="adjacent-input">
         <label for="minimize-launcher">
-          <span class="label__title">Minimize launcher</span>
+          <span class="label__title">最小化启动器</span>
           <span class="label__description"
-            >Minimize the launcher when a Minecraft process starts.</span
+            >当Minecraft进程启动时，最小化启动器。</span
           >
         </label>
         <Toggle
@@ -277,11 +276,9 @@ async function findLauncherDir() {
 
       <div class="adjacent-input">
         <label for="max-downloads">
-          <span class="label__title">Maximum concurrent downloads</span>
+          <span class="label__title">最大并发下载量</span>
           <span class="label__description">
-            The maximum amount of files the launcher can download at the same time. Set this to a
-            lower value if you have a poor internet connection. (app restart required to take
-            effect)
+            启动器同时可以下载的最大文件量。如果您的互联网连接较差，请将其设置为较低的值。（需要重新启动应用程序才能生效）
           </span>
         </label>
         <Slider
@@ -295,11 +292,9 @@ async function findLauncherDir() {
 
       <div class="adjacent-input">
         <label for="max-writes">
-          <span class="label__title">Maximum concurrent writes</span>
+          <span class="label__title">最大并发写入数</span>
           <span class="label__description">
-            The maximum amount of files the launcher can write to the disk at once. Set this to a
-            lower value if you are frequently getting I/O errors. (app restart required to take
-            effect)
+            启动器一次可以写入磁盘的最大文件量。如果您经常遇到I/O错误，请将其设置为较低的值。（需要重新启动应用程序才能生效）
           </span>
         </label>
         <Slider
@@ -321,9 +316,7 @@ async function findLauncherDir() {
         <label for="opt-out-analytics">
           <span class="label__title">Telemetry</span>
           <span class="label__description">
-            Modrinth collects anonymized analytics and usage data to improve our user experience and
-            customize your experience. By disabling this option, you opt out and your data will no
-            longer be collected.
+            Modrinth收集匿名分析和使用数据，以改善我们的用户体验并定制您的体验。禁用此选项后，您将选择退出，您的数据将不再被收集。
           </span>
         </label>
         <Toggle
@@ -341,10 +334,7 @@ async function findLauncherDir() {
         <label for="disable-discord-rpc">
           <span class="label__title">Discord RPC</span>
           <span class="label__description">
-            Manages the Discord Rich Presence integration. Disabling this will cause 'Modrinth' to
-            no longer show up as a game or app you are using on your Discord profile. This does not
-            disable any instance-specific Discord Rich Presence integrations, such as those added by
-            mods. (app restart required to take effect)
+            管理Discord Rich Presence集成。禁用此选项将导致“Modrinth”不再显示为您在Discord个人资料中使用的游戏或应用程序。这不会禁用任何特定于实例的Discord Rich Presence集成，例如由mods添加的集成。（需要重新启动应用程序才能生效）
           </span>
         </label>
         <Toggle
@@ -357,12 +347,12 @@ async function findLauncherDir() {
     <Card>
       <div class="label">
         <h3>
-          <span class="label__title size-card-header">Java settings</span>
+          <span class="label__title size-card-header">Java设置</span>
         </h3>
       </div>
       <template v-for="version in [21, 17, 8]">
         <label :for="'java-' + version">
-          <span class="label__title">Java {{ version }} location</span>
+          <span class="label__title">Java {{ version }} 位置</span>
         </label>
         <JavaSelector
           :id="'java-selector-' + version"
@@ -373,7 +363,7 @@ async function findLauncherDir() {
       </template>
       <hr class="card-divider" />
       <label for="java-args">
-        <span class="label__title">Java arguments</span>
+        <span class="label__title">Java 参数</span>
       </label>
       <input
         id="java-args"
@@ -381,10 +371,10 @@ async function findLauncherDir() {
         autocomplete="off"
         type="text"
         class="installation-input"
-        placeholder="Enter java arguments..."
+        placeholder="输入Java参数..."
       />
       <label for="env-vars">
-        <span class="label__title">Environmental variables</span>
+        <span class="label__title">环境变量</span>
       </label>
       <input
         id="env-vars"
@@ -392,14 +382,14 @@ async function findLauncherDir() {
         autocomplete="off"
         type="text"
         class="installation-input"
-        placeholder="Enter environmental variables..."
+        placeholder="输入环境变量..."
       />
       <hr class="card-divider" />
       <div class="adjacent-input">
         <label for="max-memory">
-          <span class="label__title">Java memory</span>
+          <span class="label__title">Java 内存</span>
           <span class="label__description">
-            The memory allocated to each instance when it is ran.
+            运行时分配给每个实例的内存。
           </span>
         </label>
         <Slider
@@ -420,8 +410,8 @@ async function findLauncherDir() {
       </div>
       <div class="adjacent-input">
         <label for="pre-launch">
-          <span class="label__title">Pre launch</span>
-          <span class="label__description"> Ran before the instance is launched. </span>
+          <span class="label__title">运行前</span>
+          <span class="label__description"> 在实例启动之前运行。 </span>
         </label>
         <input
           id="pre-launch"
@@ -434,7 +424,7 @@ async function findLauncherDir() {
       <div class="adjacent-input">
         <label for="wrapper">
           <span class="label__title">Wrapper</span>
-          <span class="label__description"> Wrapper command for launching Minecraft. </span>
+          <span class="label__description"> 用于启动Minecraft的Wrapper命令。 </span>
         </label>
         <input
           id="wrapper"
@@ -446,8 +436,8 @@ async function findLauncherDir() {
       </div>
       <div class="adjacent-input">
         <label for="post-exit">
-          <span class="label__title">Post exit</span>
-          <span class="label__description"> Ran after the game closes. </span>
+          <span class="label__title">退出后</span>
+          <span class="label__description"> 关闭游戏后执行。 </span>
         </label>
         <input
           id="post-exit"
@@ -461,14 +451,14 @@ async function findLauncherDir() {
     <Card>
       <div class="label">
         <h3>
-          <span class="label__title size-card-header">Window size</span>
+          <span class="label__title size-card-header">窗口大小</span>
         </h3>
       </div>
       <div class="adjacent-input">
         <label for="fullscreen">
-          <span class="label__title">Fullscreen</span>
+          <span class="label__title">全屏</span>
           <span class="label__description">
-            Overwrites the options.txt file to start in full screen when launched.
+            覆盖options.txt文件，以便在启动时以全屏模式启动。
           </span>
         </label>
         <Toggle
@@ -484,8 +474,8 @@ async function findLauncherDir() {
       </div>
       <div class="adjacent-input">
         <label for="width">
-          <span class="label__title">Width</span>
-          <span class="label__description"> The width of the game window when launched. </span>
+          <span class="label__title">宽</span>
+          <span class="label__description"> 启动时游戏窗口的宽度。 </span>
         </label>
         <input
           id="width"
@@ -498,8 +488,8 @@ async function findLauncherDir() {
       </div>
       <div class="adjacent-input">
         <label for="height">
-          <span class="label__title">Height</span>
-          <span class="label__description"> The height of the game window when launched. </span>
+          <span class="label__title">高</span>
+          <span class="label__description"> 启动时游戏窗口的高度。 </span>
         </label>
         <input
           id="height"
@@ -515,12 +505,12 @@ async function findLauncherDir() {
     <Card>
       <div class="label">
         <h3>
-          <span class="label__title size-card-header">About</span>
+          <span class="label__title size-card-header">关于</span>
         </h3>
       </div>
       <div>
         <label>
-          <span class="label__title">App version</span>
+          <span class="label__title">App 版本</span>
           <span class="label__description">Modrinth App v{{ version }} </span>
         </label>
       </div>

@@ -68,8 +68,8 @@
           <div class="payout-status">
             <span>
               <Badge v-if="payout.status === 'success'" color="green" type="Success" />
-              <Badge v-else-if="payout.status === 'cancelling'" color="yellow" type="Cancelling" />
-              <Badge v-else-if="payout.status === 'cancelled'" color="red" type="Cancelled" />
+              <Badge v-else-if="payout.status === 'cancelling'" color="yellow" type="取消ling" />
+              <Badge v-else-if="payout.status === 'cancelled'" color="red" type="取消led" />
               <Badge v-else-if="payout.status === 'failed'" color="red" type="Failed" />
               <Badge v-else-if="payout.status === 'in-transit'" color="yellow" type="In transit" />
               <Badge v-else :type="payout.status" />
@@ -86,7 +86,7 @@
             class="iconified-button raised-button"
             @click="cancelPayout(payout.id)"
           >
-            <XIcon /> Cancel payment
+            <XIcon /> 取消 payment
           </button>
         </div>
       </div>

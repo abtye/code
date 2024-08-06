@@ -45,7 +45,7 @@
         </tr>
       </table>
       <div class="button-group">
-        <Button @click="() => incompatibleModal.hide()"><XIcon />Cancel</Button>
+        <Button @click="() => incompatibleModal.hide()"><XIcon />取消</Button>
         <Button color="primary" :disabled="installing" @click="install()">
           <DownloadIcon /> {{ installing ? 'Installing' : 'Install' }}
         </Button>

@@ -2,7 +2,7 @@
   <div class="action-groups">
     <a href="https://support.modrinth.com" class="link">
       <ChatIcon />
-      <span> Get support </span>
+      <span> 获取支持 </span>
     </a>
     <Button
       v-if="currentLoadingBars.length > 0"
@@ -35,14 +35,14 @@
         </div>
       </div>
       <Button
-        v-tooltip="'Stop instance'"
+        v-tooltip="'停止实例'"
         icon-only
         class="icon-button stop"
         @click="stop(selectedProcess)"
       >
         <StopCircleIcon />
       </Button>
-      <Button v-tooltip="'View logs'" icon-only class="icon-button" @click="goToTerminal()">
+      <Button v-tooltip="'查看日志'" icon-only class="icon-button" @click="goToTerminal()">
         <TerminalSquareIcon />
       </Button>
       <Button
@@ -57,7 +57,7 @@
     </div>
     <div v-else class="status">
       <span class="circle stopped" />
-      <span class="running-text"> No instances running </span>
+      <span class="running-text"> 没有实例正在运行 </span>
     </div>
   </div>
   <transition name="download">
@@ -87,7 +87,7 @@
       >
         <div class="text"><span class="circle running" /> {{ process.profile.name }}</div>
         <Button
-          v-tooltip="'Stop instance'"
+          v-tooltip="'停止实例'"
           icon-only
           class="icon-button stop"
           @click.stop="stop(process)"
@@ -95,7 +95,7 @@
           <StopCircleIcon />
         </Button>
         <Button
-          v-tooltip="'View logs'"
+          v-tooltip="'查看日志'"
           icon-only
           class="icon-button"
           @click.stop="goToTerminal(process.profile.path)"

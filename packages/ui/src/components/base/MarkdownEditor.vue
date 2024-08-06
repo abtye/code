@@ -45,7 +45,7 @@
         />
       </div>
       <div class="input-group push-right">
-        <Button :action="() => linkModal?.hide()"><XIcon /> Cancel</Button>
+        <Button :action="() => linkModal?.hide()"><XIcon /> 取消</Button>
         <Button
           color="primary"
           :disabled="linkValidationErrorMessage || !linkUrl"
@@ -132,7 +132,7 @@
         />
       </div>
       <div class="input-group push-right">
-        <Button :action="() => imageModal?.hide()"><XIcon /> Cancel</Button>
+        <Button :action="() => imageModal?.hide()"><XIcon /> 取消</Button>
         <Button
           color="primary"
           :disabled="!canInsertImage"
@@ -186,7 +186,7 @@
         />
       </div>
       <div class="input-group push-right">
-        <Button :action="() => videoModal?.hide()"><XIcon /> Cancel</Button>
+        <Button :action="() => videoModal?.hide()"><XIcon /> 取消</Button>
         <Button
           color="primary"
           :disabled="linkValidationErrorMessage || !linkUrl"

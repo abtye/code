@@ -27,15 +27,15 @@
         <Avatar size="xs" :src="`https://mc-heads.net/avatar/${selectedAccount.id}/128`" />
         <div>
           <h4>{{ selectedAccount.username }}</h4>
-          <p>Selected</p>
+          <p>已选择</p>
         </div>
-        <Button v-tooltip="'Log out'" icon-only color="raised" @click="logout(selectedAccount.id)">
+        <Button v-tooltip="'退出登录'" icon-only color="raised" @click="logout(selectedAccount.id)">
           <TrashIcon />
         </Button>
       </div>
       <div v-else class="logged-out account">
         <h4>Not signed in</h4>
-        <Button v-tooltip="'Log in'" icon-only color="primary" @click="login()">
+        <Button v-tooltip="'登录'" icon-only color="primary" @click="login()">
           <LogInIcon />
         </Button>
       </div>
@@ -45,14 +45,14 @@
             <Avatar :src="`https://mc-heads.net/avatar/${account.id}/128`" class="icon" />
             <p>{{ account.username }}</p>
           </Button>
-          <Button v-tooltip="'Log out'" icon-only @click="logout(account.id)">
+          <Button v-tooltip="'退出登录'" icon-only @click="logout(account.id)">
             <TrashIcon />
           </Button>
         </div>
       </div>
       <Button v-if="accounts.length > 0" @click="login()">
         <PlusIcon />
-        Add account
+        添加账号
       </Button>
     </Card>
   </transition>

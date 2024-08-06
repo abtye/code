@@ -30,7 +30,7 @@
             @click="clearFilters"
           >
             <ClearIcon aria-hidden="true" />
-            Clear filters
+            清除过滤器
           </button>
           <section aria-label="Category filters">
             <div v-for="(categories, header) in categoriesMap" :key="header">
@@ -201,7 +201,7 @@
             :clear-search-on-select="false"
             :show-labels="false"
             :selectable="() => selectedVersions.length <= 6"
-            placeholder="Choose versions..."
+            placeholder="选择版本..."
             @update:model-value="onSearchChange(1)"
           />
           <h3 class="sidebar-menu-heading">Open source</h3>

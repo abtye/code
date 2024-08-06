@@ -28,7 +28,7 @@
       <div class="input-group push-right">
         <Button @click="$refs.detectJavaModal.hide()">
           <XIcon />
-          Cancel
+          取消
         </Button>
       </div>
     </div>

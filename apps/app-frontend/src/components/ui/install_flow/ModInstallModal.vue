@@ -273,11 +273,11 @@ const createInstance = async () => {
             <div class="creation-icon__description">
               <Button @click="upload_icon()">
                 <UploadIcon />
-                <span class="no-wrap"> Select icon </span>
+                <span class="no-wrap"> 选择图标 </span>
               </Button>
               <Button :disabled="!display_icon" @click="reset_icon()">
                 <XIcon />
-                <span class="no-wrap"> Remove icon </span>
+                <span class="no-wrap"> 移除图标 </span>
               </Button>
             </div>
           </div>
@@ -301,7 +301,7 @@ const createInstance = async () => {
           <PlusIcon />
           {{ showCreation ? 'Hide New Instance' : 'Create new instance' }}
         </Button>
-        <Button @click="installModal.hide()">Cancel</Button>
+        <Button @click="installModal.hide()">取消</Button>
       </div>
     </div>
   </Modal>

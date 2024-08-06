@@ -65,7 +65,7 @@
       @update:model-value="updateQuery"
     />
     <button
-      title="Clear filters"
+      title="清除过滤器"
       :disabled="selectedLoaders.length === 0 && selectedGameVersions.length === 0"
       class="iconified-button"
       @click="
@@ -78,7 +78,7 @@
       "
     >
       <ClearIcon />
-      Clear filters
+      清除过滤器
     </button>
   </div>
 </template>

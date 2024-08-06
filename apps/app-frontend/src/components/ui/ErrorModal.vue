@@ -167,7 +167,7 @@ async function loginMinecraft() {
         </template>
       </div>
       <div class="input-group push-right">
-        <a :href="supportLink" class="btn" @click="errorModal.hide()"><ChatIcon /> Get support</a>
+        <a :href="supportLink" class="btn" @click="errorModal.hide()"><ChatIcon /> 获取支持</a>
         <button class="btn" @click="errorModal.hide()"><XIcon /> Close</button>
       </div>
     </div>

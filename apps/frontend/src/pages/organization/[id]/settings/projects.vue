@@ -148,7 +148,7 @@
         <div class="push-right input-group">
           <Button @click="$refs.editLinksModal.hide()">
             <XIcon />
-            Cancel
+            取消
           </Button>
           <Button color="primary" @click="onBulkEditLinks">
             <SaveIcon />

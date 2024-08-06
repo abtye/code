@@ -504,16 +504,16 @@ const selectableProjectTypes = computed(() => {
         (x) => x.version === instanceContext.value.game_version,
       ) <= availableGameVersions.value.findIndex((x) => x.version === '1.13')
     ) {
-      values.unshift({ label: 'Data Packs', href: `/browse/datapack` })
+      values.unshift({ label: '数据包', href: `/browse/datapack` })
     }
 
     if (instanceContext.value.loader !== 'vanilla') {
       values.unshift({ label: 'Mods', href: '/browse/mod' })
     }
   } else {
-    values.unshift({ label: 'Data Packs', href: `/browse/datapack` })
-    values.unshift({ label: 'Mods', href: '/browse/mod' })
-    values.unshift({ label: 'Modpacks', href: '/browse/modpack' })
+    values.unshift({ label: '数据包', href: `/browse/datapack` })
+    values.unshift({ label: '模组', href: '/browse/mod' })
+    values.unshift({ label: '整合包', href: '/browse/modpack' })
   }
 
   return values
@@ -582,7 +582,7 @@ const isModProject = computed(() => ['modpack', 'mod'].includes(projectType.valu
           "
           @click="clearFilters"
         >
-          <ClearIcon /> Clear filters
+          <ClearIcon /> 清除过滤器
         </Button>
         <div
           v-if="(isModProject && ignoreInstanceLoaders) || projectType === 'shader'"
@@ -601,8 +601,8 @@ const isModProject = computed(() => ['modpack', 'mod'].includes(projectType.valu
           </div>
         </div>
         <div v-if="showVersions" class="versions">
-          <h2>Minecraft versions</h2>
-          <Checkbox v-model="showSnapshots" class="filter-checkbox" label="Include snapshots" />
+          <h2>Minecraft 版本</h2>
+          <Checkbox v-model="showSnapshots" class="filter-checkbox" label="包含快照" />
           <multiselect
             v-model="selectedVersions"
             :options="
@@ -618,7 +618,7 @@ const isModProject = computed(() => ['modpack', 'mod'].includes(projectType.valu
             :close-on-select="false"
             :clear-search-on-select="false"
             :show-labels="false"
-            placeholder="Choose versions..."
+            placeholder="选择版本..."
             @update:model-value="onSearchChangeToTop(1)"
           />
         </div>
@@ -643,7 +643,7 @@ const isModProject = computed(() => ['modpack', 'mod'].includes(projectType.valu
           <h2>Environments</h2>
           <SearchFilter
             :active-filters="selectedEnvironments"
-            display-name="Client"
+            display-name="客户端"
             facet-name="client"
             class="filter-checkbox"
             @toggle="toggleEnv"
@@ -652,7 +652,7 @@ const isModProject = computed(() => ['modpack', 'mod'].includes(projectType.valu
           </SearchFilter>
           <SearchFilter
             :active-filters="selectedEnvironments"
-            display-name="Server"
+            display-name="服务器r"
             facet-name="server"
             class="filter-checkbox"
             @toggle="toggleEnv"
@@ -661,10 +661,10 @@ const isModProject = computed(() => ['modpack', 'mod'].includes(projectType.valu
           </SearchFilter>
         </div>
         <div class="open-source">
-          <h2>Open source</h2>
+          <h2>开源</h2>
           <Checkbox
             v-model="onlyOpenSource"
-            label="Open source only"
+            label="只显示开源的"
             class="filter-checkbox"
             @update:model-value="onSearchChangeToTop(1)"
           />

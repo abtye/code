@@ -23,7 +23,7 @@
       <div class="input-group push-right">
         <button class="btn" @click="$refs.modalConfirmUnlock.hide()">
           <XIcon />
-          Cancel
+          取消
         </button>
         <button class="btn btn-danger" @click="unlockProfile">
           <LockIcon />
@@ -48,7 +48,7 @@
       <div class="input-group push-right">
         <button class="btn" @click="$refs.modalConfirmUnpair.hide()">
           <XIcon />
-          Cancel
+          取消
         </button>
         <button class="btn btn-danger" @click="unpairProfile">
           <XIcon />
@@ -77,7 +77,7 @@
             name="Game Version Dropdown"
             render-up
           />
-          <Checkbox v-model="showSnapshots" class="filter-checkbox" label="Include snapshots" />
+          <Checkbox v-model="showSnapshots" class="filter-checkbox" label="包含快照" />
         </div>
       </div>
       <div v-if="loader !== 'vanilla'" class="input-row">
@@ -94,7 +94,7 @@
       <div class="push-right input-group">
         <button class="btn" @click="$refs.changeVersionsModal.hide()">
           <XIcon />
-          Cancel
+          取消
         </button>
         <button
           class="btn btn-primary"
@@ -121,11 +121,11 @@
       <div class="input-stack">
         <button id="instance-icon" class="btn" @click="setIcon">
           <UploadIcon />
-          Select icon
+          选择图标
         </button>
         <button :disabled="!icon" class="btn" @click="resetIcon">
           <TrashIcon />
-          Remove icon
+          移除图标
         </button>
       </div>
     </div>
@@ -162,7 +162,7 @@
 
     <div class="adjacent-input">
       <label>
-        <span class="label__title">Categories</span>
+        <span class="label__title">类别</span>
         <span class="label__description">
           Set the categories of this instance, for display in the library page. This is purely
           cosmetic.

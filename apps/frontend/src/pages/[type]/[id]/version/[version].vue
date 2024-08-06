@@ -39,7 +39,7 @@
         <div class="button-group">
           <button class="iconified-button" @click="$refs.modal_package_mod.hide()">
             <CrossIcon />
-            Cancel
+            取消
           </button>
           <button class="iconified-button brand-button" @click="createDataPackVersion">
             <RightArrowIcon />
@@ -108,7 +108,7 @@
           class="iconified-button"
         >
           <CrossIcon aria-hidden="true" />
-          Cancel
+          取消
         </nuxt-link>
       </div>
       <div v-else-if="isEditing" class="input-group">
@@ -535,7 +535,7 @@
           <Categories v-else :categories="version.loaders" :type="project.actualProjectType" />
         </div>
         <div>
-          <h4>Game versions</h4>
+          <h4>游戏版本s</h4>
           <template v-if="isEditing">
             <multiselect
               v-model="version.game_versions"
@@ -555,7 +555,7 @@
               :show-labels="false"
               :limit="6"
               :hide-selected="true"
-              placeholder="Choose versions..."
+              placeholder="选择版本..."
             />
             <Checkbox
               v-model="showSnapshots"

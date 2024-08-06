@@ -5,7 +5,7 @@ export const commonMessages = defineMessages({
   },
   cancelButton: {
     id: "button.cancel",
-    defaultMessage: "Cancel",
+    defaultMessage: "取消",
   },
   collectionsLabel: {
     id: "label.collections",

@@ -417,7 +417,7 @@ const selectedRange = computed({
   get: () => {
     return (
       selectableRanges.find((option) => option.value === timeRange.value) || {
-        label: "Custom",
+        label: "自定义",
         value: timeRange.value,
       }
     );

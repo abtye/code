@@ -96,7 +96,7 @@
         <div class="button-group">
           <button class="iconified-button" @click="$refs.modal_edit_item.hide()">
             <XIcon />
-            Cancel
+            取消
           </button>
           <button
             v-if="editIndex === -1"

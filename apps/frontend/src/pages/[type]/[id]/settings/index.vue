@@ -45,7 +45,7 @@
             @click="markIconForDeletion"
           >
             <TrashIcon />
-            Remove icon
+            移除图标
           </button>
         </div>
       </div>

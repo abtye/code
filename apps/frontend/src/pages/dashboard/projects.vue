@@ -147,7 +147,7 @@
         <div class="push-right input-group">
           <button class="iconified-button" @click="$refs.editLinksModal.hide()">
             <CrossIcon />
-            Cancel
+            取消
           </button>
           <button class="iconified-button brand-button" @click="bulkEditLinks()">
             <SaveIcon />

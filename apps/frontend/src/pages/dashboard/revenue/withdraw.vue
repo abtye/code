@@ -162,7 +162,7 @@
     <div class="button-group">
       <nuxt-link to="/dashboard/revenue" class="iconified-button">
         <XIcon />
-        Cancel
+        取消
       </nuxt-link>
       <button
         :disabled="

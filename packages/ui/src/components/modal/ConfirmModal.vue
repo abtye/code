@@ -22,7 +22,7 @@
       <div class="input-group push-right">
         <button class="btn" @click="modal.hide()">
           <XIcon />
-          Cancel
+          取消
         </button>
         <button class="btn btn-danger" :disabled="action_disabled" @click="proceed">
           <TrashIcon />

@@ -10,14 +10,14 @@
         <div class="GBBNWLJVGRHFLYVGSZKSSKNTHFYXHMBD-2">
           <BisectIcon class="GBBNWLJVGRHFLYVGSZKSSKNTHFYXHMBD-3" />
           <span>
-            <span> Host your Minecraft server on </span>
+            <span> 将您的Minecraft服务器托管在 </span>
             <strong>BisectHosting</strong>
-            <span> - get 25% off your first month with code <strong>MODRINTH</strong>. </span>
+            <span> - 第一个月使用代码可享受25%的折扣 <strong>MODRINTH</strong>. </span>
           </span>
         </div>
       </div>
       <div class="GBBNWLJVGRHFLYVGSZKSSKNTHFYXHMBD-4">
-        <a rel="noopener sponsored" :target="target" href="https://adrinth.com"> Ad via Adrinth </a>
+        <a rel="noopener sponsored" :target="target" href="https://adrinth.com"> 来自Adrinth的广告 </a>
       </div>
     </div>
   </div>

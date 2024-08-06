@@ -136,7 +136,7 @@ const filteredResults = computed(() => {
     })
   }
 
-  if (sortBy.value === 'Game version') {
+  if (sortBy.value === '游戏版本') {
     instances.sort((a, b) => {
       return a.game_version.localeCompare(b.game_version)
     })
@@ -181,7 +181,7 @@ const filteredResults = computed(() => {
 
       instanceMap.get(loader).push(instance)
     })
-  } else if (group.value === 'Game version') {
+  } else if (group.value === '游戏版本') {
     instances.forEach((instance) => {
       if (!instanceMap.has(instance.game_version)) {
         instanceMap.set(instance.game_version, [])
@@ -253,7 +253,7 @@ const filteredResults = computed(() => {
         v-model="sortBy"
         class="sort-dropdown"
         name="Sort Dropdown"
-        :options="['Name', 'Last played', 'Date created', 'Date modified', 'Game version']"
+        :options="['Name', 'Last played', 'Date created', 'Date modified', '游戏版本']"
         placeholder="Select..."
       />
     </div>
@@ -273,7 +273,7 @@ const filteredResults = computed(() => {
         v-model="group"
         class="group-dropdown"
         name="Group Dropdown"
-        :options="['Category', 'Loader', 'Game version', 'None']"
+        :options="['Category', 'Loader', '游戏版本', 'None']"
         placeholder="Select..."
       />
     </div>

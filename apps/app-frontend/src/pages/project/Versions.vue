@@ -61,7 +61,7 @@
       :action="clearFilters"
     >
       <ClearIcon />
-      Clear filters
+      清除过滤器
     </Button>
   </Card>
   <Pagination

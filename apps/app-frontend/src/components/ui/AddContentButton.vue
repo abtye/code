@@ -52,11 +52,11 @@ const handleSearchContent = async () => {
       <DropdownIcon />
       <template #search>
         <SearchIcon />
-        <span class="no-wrap"> Search </span>
+        <span class="no-wrap"> 搜索 </span>
       </template>
       <template #from_file>
         <FolderOpenIcon />
-        <span class="no-wrap"> Add from file </span>
+        <span class="no-wrap"> 从文件添加 </span>
       </template>
     </OverflowMenu>
   </div>

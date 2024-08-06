@@ -100,7 +100,7 @@
         <div class="submit-row input-group push-right">
           <button class="iconified-button" @click="$refs.appModal.hide()">
             <XIcon />
-            Cancel
+            取消
           </button>
           <button
             v-if="editingId"
